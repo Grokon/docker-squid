@@ -10,7 +10,7 @@ Automated builds of the image are available on [Dockerhub](https://hub.docker.co
 Just launch container:
 
 ```bash
-docker run -p 3128:3128 grokon/squid
+docker run -p 3128:3128 --name docker-squid grokon/squid
 ```
 
 or use [docker-compose](https://docs.docker.com/compose/):
