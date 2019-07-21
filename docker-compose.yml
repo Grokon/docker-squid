@@ -2,7 +2,7 @@ version: '2'
 services:
   squid:
     image: 'grokon/squid'
-    container_name: 'squid-proxy'
+    container_name: 'docker-squid'
     restart: always
     ports:
       - '3128:3128'

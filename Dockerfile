@@ -16,4 +16,6 @@ EXPOSE 3128/tcp
 VOLUME ["/var/cache/squid"]
 USER squid
 ENTRYPOINT ["docker-entrypoint.sh"]
+# -N Don't run in daemon mode - important for docker
+# if need Debug add -X for verbose debug logging
 CMD ["squid","-f","$SQUID_CONFIG_FILE","-NYCd","1","$EXTRA_ARGS"]
